@@ -165,6 +165,24 @@
         .paragraph{
             font-size: larger;
         }
+        @keyframes scale-a-lil {
+            from {
+                scale: .5;
+            }
+        }
+  
+        @media (prefers-reduced-motion: no-preference) {
+        .animated {
+            animation: scale-a-lil linear both;
+            animation-timeline: view();
+            animation-range: 25vh 75vh;
+        }
+        .contact-form {
+            animation: scale-a-lil linear both;
+            animation-timeline: view();
+            animation-range: 25vh 75vh;
+        }
+        }
     </style>
 </head>
 <body>
@@ -219,7 +237,7 @@
                         ¡Acompáñame en este viaje mientras exploramos juntos el mundo de los productos y descubrimos las mejores opciones para ti! ¡Gracias por confiar en mis reseñas y ser parte de esta comunidad de consumidores informados!</p>
                 </div>
                 <div class="col-md-6  text-center" >
-                    <img src="img/photo.png" alt="" class="img-fluid">
+                    <img src="img/photo.png" alt="" class="img-fluid animated">
                 </div>
             </div>
         </div>
@@ -241,15 +259,15 @@
                 <div class="col-md-9 mt-5" >
                     <div class="row justify-content-center mt-5">
                         <div class="col-md-3  div-container">
-                            <img class="img-fluid" src="https://doodleipsum.com/700x1244/hand-drawn?bg=5271ff&i=e8a34dae3102efab7cdc03581730a630" alt="">
+                            <img class="img-fluid animated" src="https://doodleipsum.com/700x1244/hand-drawn?bg=5271ff&i=e8a34dae3102efab7cdc03581730a630" alt="">
                             <a href=""><i class="fa fa-play play-icon"></i></a>
                         </div>
                         <div class="col-md-3  div-container">
-                            <img class="img-fluid" src="https://doodleipsum.com/700x1244/outline?bg=ffbd59&i=6af2a2dcb4ffbc4eac472462fcf1c371" alt="">
+                            <img class="img-fluid animated" src="https://doodleipsum.com/700x1244/outline?bg=ffbd59&i=6af2a2dcb4ffbc4eac472462fcf1c371" alt="">
                             <a href=""><i class="fa fa-play play-icon"></i></a>
                         </div>
                         <div class="col-md-3 div-container">
-                            <img class="img-fluid" src="https://doodleipsum.com/700x1244/hand-drawn?bg=8c52ff&i=6046b13cfc8fb2fbd8c33f8a39474407" alt="">
+                            <img class="img-fluid animated" src="https://doodleipsum.com/700x1244/hand-drawn?bg=8c52ff&i=6046b13cfc8fb2fbd8c33f8a39474407" alt="">
                             <a href=""><i class="fa fa-play play-icon"></i></a>
                         </div>
                     </div>
